@@ -1,0 +1,29 @@
+body {
+    font-family: Georgia, serif;
+    max-width: 700px;
+    margin: 60px auto;
+    color: #2c2c2c;
+    line-height: 1.6;
+}
+
+h1 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list li {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-list a {
+    font-size: 1.2em;
+    color: #2980b9;
+    text-decoration: none;
+}

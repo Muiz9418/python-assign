@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Welcome to My Flask Blog</h1>
+
+    {% if num % 2 == 0 %}
+        <p>Lucky number {{ num }} is even!</p>
+    {% else %}
+        <p>Lucky number {{ num }} is odd!</p>
+    {% endif %}
+
+    <ul class="post-list">
+        {% for post in posts %}
+            <li>
+                <a href="/post/{{ loop.index0 }}">{{ post.title }}</a>
+                <p>{{ post.subtitle }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
