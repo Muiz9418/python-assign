@@ -24,6 +24,8 @@ def home():
 
 @app.route('/post/<int:post_id>')
 def show_post(post_id):
+    if post_id < 0 or post_id >= len(posts):
+        return "Post not found", 404
     requested_post = posts[post_id]
     return render_template("post.html", post=requested_post)
 
