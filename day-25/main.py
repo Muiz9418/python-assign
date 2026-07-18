@@ -9,7 +9,7 @@ import pandas as pd
 
 screen = turtle.Screen()
 screen.title("U.S. States Game")
-image = "blank_states_img.gif"  # background map image, not included here
+image = "blank_states_img.gif" # background map image, not included here
 screen.addshape(image)
 turtle.Turtle().shape(image)
 
